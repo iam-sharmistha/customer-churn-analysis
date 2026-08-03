@@ -1,0 +1,40 @@
+====================================================
+PROJECT SUMMARY
+====================================================
+
+Project Title:
+Customer Churn Analysis
+
+Objective:
+To analyse customer churn patterns using SQL, Excel and Power BI and identify the key factors contributing to customer attrition.
+
+Dataset:
+IBM Telco Customer Churn Dataset
+
+Total Customers:
+7,043
+
+Tools Used:
+- SQL (SQLite)
+- Microsoft Excel
+- Microsoft Power BI
+- Git & GitHub
+
+Key Findings:
+- Overall churn rate: 26.54%
+- Month-to-month contracts had the highest churn rate.
+- Fiber Optic customers had the highest churn rate.
+- Electronic Check customers had the highest churn rate.
+- Customers within their first year were most likely to churn.
+
+Skills Demonstrated:
+- Data Cleaning
+- SQL Querying
+- Data Analysis
+- Dashboard Development
+- KPI Reporting
+- Business Intelligence
+- Business Storytelling
+
+Project Outcome:
+This project demonstrates how customer data can be transformed into actionable business insights to support customer retention strategies and evidence-based decision-making.

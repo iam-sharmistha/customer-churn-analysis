@@ -1,0 +1,41 @@
+====================================================
+CUSTOMER CHURN ANALYSIS – BUSINESS INSIGHTS
+====================================================
+
+Business Insight 1
+
+The dataset contains 7,043 customer records. A total of 1,869 customers had churned, resulting in an overall churn rate of 26.54%. Approximately one in four customers discontinued their service.
+
+----------------------------------------------------
+
+Business Insight 2
+
+Customers on month-to-month contracts experienced the highest churn rate (42.71%), compared with 11.27% for one-year contracts and only 2.83% for two-year contracts. This suggests that longer-term contracts are strongly associated with improved customer retention.
+
+----------------------------------------------------
+
+Business Insight 3
+
+Customers using Fiber Optic internet experienced the highest churn rate (41.89%), compared with DSL customers (18.96%) and customers without internet service (7.40%). This suggests Fiber Optic customers should be prioritised for retention initiatives and further investigation into service quality, pricing or customer experience.
+
+----------------------------------------------------
+
+Business Insight 4
+
+Customers using Electronic Check had the highest churn rate (45.29%), while customers using automatic payment methods had much lower churn rates. Encouraging customers to switch to automatic payment methods may help improve customer retention.
+
+----------------------------------------------------
+
+Business Insight 5
+
+Customers were most likely to churn during their first year with the company, with a churn rate of 47.44%. Churn decreased steadily as customer tenure increased, falling to just 9.51% among customers who had remained with the company for 49–72 months. This suggests that improving customer retention during the first year could significantly reduce overall churn.
+
+----------------------------------------------------
+
+BUSINESS RECOMMENDATIONS
+
+• Introduce targeted retention programmes for customers during their first 12 months.
+• Encourage customers to move from month-to-month contracts to longer-term contracts through loyalty incentives.
+• Investigate the high churn rate among Fiber Optic customers to identify potential service quality or pricing issues.
+• Promote automatic payment methods to reduce customer churn.
+• Develop proactive customer engagement strategies for high-risk customer segments before they decide to leave.
