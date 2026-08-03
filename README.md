@@ -30,7 +30,9 @@ The analysis was completed using SQL, Excel and Power BI.
 
 IBM Telco Customer Churn Dataset
 
-Total Customers: **7,043**
+- Total Customers: **7,043**
+- Churned Customers: **1,869**
+- Overall Churn Rate: **26.54%**
 
 ---
 
@@ -57,20 +59,19 @@ Total Customers: **7,043**
 
 ## Repository Structure
 
-```
+```text
 customer-churn-analysis/
 │
 ├── data/
 │   ├── raw/
 │   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │   └── cleaned/
-│       └── Telco-Customer-Churn-Cleaned.csv
+│       └── Telco-Customer-Churn-cleaned.csv
 │
 ├── excel/
 │   └── customer_churn_dashboard.xlsx
 │
 ├── powerbi/
-│   └── customer_churn_dashboard.pbix
 │
 ├── sql/
 │   └── customer_churn_analysis.sql
@@ -79,9 +80,6 @@ customer-churn-analysis/
 │   ├── excel_dashboard.png
 │   ├── excel_dashboard_contract_filter.png
 │   ├── excel_dashboard_internet_filter.png
-│   ├── powerbi_dashboard.jpeg
-│   ├── powerbi_dashboard_contract_filter.jpeg
-│   ├── powerbi_dashboard_fiber_optic_filter.jpeg
 │   ├── sql_contract_churn_analysis.png
 │   └── sql_high_risk_customers.png
 │
@@ -93,15 +91,15 @@ customer-churn-analysis/
 
 ## Excel Dashboard
 
-The Excel dashboard provides interactive analysis using Pivot Tables, Pivot Charts and Slicers.
+The Excel dashboard was created using Pivot Tables, Pivot Charts and Slicers to analyse customer churn across multiple dimensions.
 
-Features include:
+Dashboard features include:
 
 - Overall churn summary
-- Contract-wise churn analysis
-- Internet service churn analysis
-- Payment method analysis
-- Tenure group analysis
+- Churn by contract type
+- Churn by internet service
+- Churn by payment method
+- Churn by tenure group
 - Interactive Contract and Internet Service filters
 
 ### Dashboard
@@ -120,39 +118,29 @@ Features include:
 
 ## Power BI Dashboard
 
-The Power BI dashboard provides an interactive view of customer churn patterns.
+An interactive Power BI dashboard was also developed using the cleaned dataset.
 
-Visuals include:
+The dashboard includes:
 
-- KPI Cards
-- Churn by Contract
-- Churn by Internet Service
-- Churn by Payment Method
-- Churn by Tenure
+- KPI cards
+- Customer churn by contract
+- Customer churn by internet service
+- Customer churn by payment method
+- Customer churn by tenure
 - Interactive slicers for Contract and Internet Service
 
-### Dashboard
-
-![Power BI Dashboard](screenshots/powerbi_dashboard.jpeg)
-
-### Contract Filter
-
-![Power BI Contract Filter](screenshots/powerbi_dashboard_contract_filter.jpeg)
-
-### Fiber Optic Filter
-
-![Power BI Fiber Optic Filter](screenshots/powerbi_dashboard_fiber_optic_filter.jpeg)
+The Power BI dashboard file is available in the **powerbi** folder.
 
 ---
 
 ## SQL Analysis
 
-Example SQL analyses performed include:
+SQL was used to analyse customer behaviour and identify high-risk customer segments.
 
-- Customer churn rate by contract type
+Example analyses include:
+
+- Contract-wise churn analysis
 - High-risk customer identification
-- Customer segmentation
-- Business performance analysis
 
 ### Contract Churn Analysis
 
@@ -166,11 +154,11 @@ Example SQL analyses performed include:
 
 ## Business Recommendations
 
-- Encourage customers to move from Month-to-month to long-term contracts.
+- Encourage customers to move from Month-to-month contracts to longer-term plans.
 - Improve customer experience for Fiber optic users.
-- Investigate customer dissatisfaction associated with Electronic check payments.
-- Focus retention campaigns on customers within their first year of service.
-- Prioritise proactive engagement for customers identified as high-risk.
+- Investigate the high churn associated with Electronic check payments.
+- Focus retention efforts on customers during their first year.
+- Identify high-risk customers early and implement proactive retention strategies.
 
 ---
 
@@ -178,6 +166,5 @@ Example SQL analyses performed include:
 
 **Sharmistha Barua**
 
-GitHub: https://github.com/iam-sharmistha
-
-LinkedIn: https://www.linkedin.com/in/iamsharmistha
+GitHub: https
+```
