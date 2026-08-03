@@ -1,59 +1,52 @@
 # Customer Churn Analysis
 
-Customer churn analysis project built using SQL, Excel and Power BI to identify customer retention patterns, churn drivers and high-risk customer segments. The project combines data cleaning, SQL analysis and interactive dashboards to generate business insights that support customer retention strategies.
+An end-to-end customer churn analytics project built using **SQL, Excel and Power BI** to analyse customer retention patterns, identify churn drivers and generate business recommendations using the IBM Telco Customer Churn dataset.
 
 ---
 
 ## Project Overview
 
-This project analyses the IBM Telco Customer Churn dataset to answer key business questions, including:
+Customer churn is one of the most important business metrics for subscription-based companies. This project analyses customer behaviour to identify the factors associated with customer churn and provides actionable recommendations to improve customer retention.
 
-- What is the overall customer churn rate?
-- Which contract types have the highest churn?
-- Which internet services experience the most churn?
-- Which payment methods are associated with higher customer loss?
-- How does customer tenure influence churn?
-
-The analysis was completed using SQL, Excel and Power BI.
+The analysis was completed using SQL for data exploration, Excel for dashboard creation and Power BI for interactive business reporting.
 
 ---
 
-## Tools Used
+## Tools & Technologies
 
-- SQL
-- Excel
-- Power BI
+- Microsoft Excel
+- SQL (SQLite)
+- Microsoft Power BI
+- Git & GitHub
 
 ---
 
 ## Dataset
 
-IBM Telco Customer Churn Dataset
+**IBM Telco Customer Churn Dataset**
 
-- Total Customers: **7,043**
-- Churned Customers: **1,869**
-- Overall Churn Rate: **26.54%**
+The dataset contains **7,043 customer records** with information including:
 
----
-
-## Business Questions Answered
-
-- Overall customer churn rate
-- Churn by contract type
-- Churn by internet service
-- Churn by payment method
-- Churn by customer tenure
-- Identification of high-risk customer segments
+- Customer demographics
+- Contract type
+- Internet service
+- Payment method
+- Monthly charges
+- Customer tenure
+- Churn status
 
 ---
 
-## Key Insights
+## Business Questions
 
-- Overall customer churn rate is **26.54%**.
-- Customers with **Month-to-month contracts** have the highest churn rate (**42.71%**).
-- **Fiber optic** customers experience the highest churn rate (**41.89%**).
-- Customers paying through **Electronic check** show the highest churn rate (**45.29%**).
-- Most customer churn occurs within the **first 12 months** of service.
+This project answers the following business questions:
+
+- What is the overall customer churn rate?
+- Which contract types have the highest churn?
+- Which internet services experience the highest churn?
+- Which payment methods are associated with the highest churn?
+- Does customer tenure influence churn?
+- Which customers are at the highest risk of leaving?
 
 ---
 
@@ -63,52 +56,103 @@ IBM Telco Customer Churn Dataset
 customer-churn-analysis/
 │
 ├── data/
-│   ├── raw/
-│   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│   └── cleaned/
-│       └── Telco-Customer-Churn-cleaned.csv
+│   ├── cleaned/
+│   │   └── Telco-Customer-Churn-Cleaned.csv
+│   │
+│   └── raw/
+│       └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │
 ├── excel/
 │   └── customer_churn_dashboard.xlsx
 │
 ├── powerbi/
-│
-├── sql/
-│   └── customer_churn_analysis.sql
+│   └── customer_churn_dashboard.pbix
 │
 ├── screenshots/
 │   ├── excel_dashboard.png
 │   ├── excel_dashboard_contract_filter.png
 │   ├── excel_dashboard_internet_filter.png
+│   ├── powerbi_dashboard_contract_filter.jpeg
+│   ├── powerbi_dashboard_fiber_optic_filter.jpeg
 │   ├── sql_contract_churn_analysis.png
 │   └── sql_high_risk_customers.png
 │
+├── sql/
+│   └── customer_churn_analysis.sql
+│
+├── business_insights.txt
+├── project_summary.txt
 ├── LICENSE
 └── README.md
 ```
 
 ---
 
+## Project Workflow
+
+1. Imported and cleaned the IBM Telco Customer Churn dataset.
+2. Analysed customer behaviour using SQL.
+3. Performed exploratory analysis in Excel.
+4. Built an interactive Excel dashboard using Pivot Tables, Pivot Charts and Slicers.
+5. Developed an interactive Power BI dashboard.
+6. Generated business insights and recommendations.
+
+---
+
+## SQL Analysis
+
+The SQL analysis includes:
+
+- Overall churn analysis
+- Contract-wise churn analysis
+- Internet service analysis
+- Payment method analysis
+- High-risk customer identification
+- Business KPI calculations
+
+### Contract Churn Analysis
+
+This query calculates the churn rate for each contract type and highlights that customers on month-to-month contracts are significantly more likely to churn.
+
+![SQL Contract Analysis](screenshots/sql_contract_churn_analysis.png)
+
+---
+
+### High-Risk Customer Identification
+
+This query identifies customers with month-to-month contracts, Fiber optic internet and Electronic check payments, helping businesses identify high-risk customer segments.
+
+![SQL High Risk Customers](screenshots/sql_high_risk_customers.png)
+
+---
+
 ## Excel Dashboard
 
-The Excel dashboard was created using Pivot Tables, Pivot Charts and Slicers to analyse customer churn across multiple dimensions.
+The Excel dashboard provides an interactive overview of customer churn.
 
-Dashboard features include:
+### Dashboard Features
 
-- Overall churn summary
-- Churn by contract type
-- Churn by internet service
-- Churn by payment method
-- Churn by tenure group
-- Interactive Contract and Internet Service filters
+- Total Customers
+- Churned Customers
+- Overall Churn Rate
+- Churn by Contract Type
+- Churn by Internet Service
+- Churn by Payment Method
+- Churn by Customer Tenure
+- Interactive Contract Filter
+- Interactive Internet Service Filter
 
-### Dashboard
+### Dashboard Overview
 
 ![Excel Dashboard](screenshots/excel_dashboard.png)
+
+---
 
 ### Contract Filter
 
 ![Excel Contract Filter](screenshots/excel_dashboard_contract_filter.png)
+
+---
 
 ### Internet Service Filter
 
@@ -118,47 +162,69 @@ Dashboard features include:
 
 ## Power BI Dashboard
 
-An interactive Power BI dashboard was also developed using the cleaned dataset.
+An interactive Power BI dashboard was developed to visualise customer churn patterns.
 
-The dashboard includes:
+### Dashboard Features
 
-- KPI cards
-- Customer churn by contract
-- Customer churn by internet service
-- Customer churn by payment method
-- Customer churn by tenure
-- Interactive slicers for Contract and Internet Service
+- KPI Cards
+- Churn by Contract
+- Churn by Internet Service
+- Churn by Payment Method
+- Churn by Customer Tenure
+- Interactive Slicers
 
-The Power BI dashboard file is available in the **powerbi** folder.
+### Contract Filter
+
+![Power BI Contract Filter](screenshots/powerbi_dashboard_contract_filter.jpeg)
 
 ---
 
-## SQL Analysis
+### Fiber Optic Filter
 
-SQL was used to analyse customer behaviour and identify high-risk customer segments.
+![Power BI Fiber Optic Filter](screenshots/powerbi_dashboard_fiber_optic_filter.jpeg)
 
-Example analyses include:
+---
 
-- Contract-wise churn analysis
-- High-risk customer identification
+## Key Business Insights
 
-### Contract Churn Analysis
-
-![SQL Contract Analysis](screenshots/sql_contract_churn_analysis.png)
-
-### High-Risk Customers
-
-![SQL High Risk Customers](screenshots/sql_high_risk_customers.png)
+- Overall customer churn rate: **26.54%**
+- Month-to-month contracts recorded the highest churn rate (**42.71%**).
+- Fiber optic customers experienced the highest churn rate (**41.89%**).
+- Customers using Electronic check had the highest churn rate (**45.29%**).
+- Customers within their first year recorded the highest churn rate (**47.44%**).
+- Customer churn decreased significantly as tenure increased.
 
 ---
 
 ## Business Recommendations
 
-- Encourage customers to move from Month-to-month contracts to longer-term plans.
-- Improve customer experience for Fiber optic users.
-- Investigate the high churn associated with Electronic check payments.
-- Focus retention efforts on customers during their first year.
-- Identify high-risk customers early and implement proactive retention strategies.
+- Encourage customers to move from month-to-month contracts to longer-term contracts.
+- Improve customer retention during the first year of service.
+- Investigate customer satisfaction among Fiber optic users.
+- Promote automatic payment methods to reduce churn.
+- Develop targeted retention campaigns for high-risk customer segments.
+
+---
+
+## Additional Documentation
+
+- **business_insights.txt** – Detailed business insights and recommendations.
+- **project_summary.txt** – Project objective, tools used and key findings.
+
+---
+
+## Skills Demonstrated
+
+- SQL
+- Data Cleaning
+- Exploratory Data Analysis
+- Customer Segmentation
+- Dashboard Development
+- KPI Reporting
+- Business Intelligence
+- Microsoft Excel
+- Microsoft Power BI
+- Business Storytelling
 
 ---
 
@@ -166,5 +232,8 @@ Example analyses include:
 
 **Sharmistha Barua**
 
-GitHub: https
-```
+MSc Management | Data Analytics | Business Intelligence
+
+**GitHub:** https://github.com/iam-sharmistha
+
+**LinkedIn:** https://www.linkedin.com/in/iamsharmistha
