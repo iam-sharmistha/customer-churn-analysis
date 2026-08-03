@@ -64,7 +64,7 @@ customer-churn-analysis/
 │   ├── raw/
 │   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │   └── cleaned/
-│       └── Telco-Customer-Churn-cleaned.csv
+│       └── Telco-Customer-Churn-Cleaned.csv
 │
 ├── excel/
 │   └── customer_churn_dashboard.xlsx
